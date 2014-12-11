@@ -12,6 +12,7 @@
 		A987ADB81A396F6800E414A6 /* HTHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A987ADB71A396F6800E414A6 /* HTHViewController.m */; };
 		A987ADBD1A396F6800E414A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A987ADBC1A396F6800E414A6 /* Images.xcassets */; };
 		A987ADCC1A396F6800E414A6 /* NSAttributedString_MarkdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A987ADCB1A396F6800E414A6 /* NSAttributedString_MarkdownTests.m */; };
+		A987ADD91A39777E00E414A6 /* NSAttributedString+HTHMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A987ADD81A39777E00E414A6 /* NSAttributedString+HTHMarkdown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		A987ADC51A396F6800E414A6 /* NSAttributedString-MarkdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSAttributedString-MarkdownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A987ADCA1A396F6800E414A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A987ADCB1A396F6800E414A6 /* NSAttributedString_MarkdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributedString_MarkdownTests.m; sourceTree = "<group>"; };
+		A987ADD71A39777E00E414A6 /* NSAttributedString+HTHMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HTHMarkdown.h"; sourceTree = "<group>"; };
+		A987ADD81A39777E00E414A6 /* NSAttributedString+HTHMarkdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HTHMarkdown.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		A987ADAE1A396F6800E414A6 /* NSAttributedString-Markdown */ = {
 			isa = PBXGroup;
 			children = (
+				A987ADD71A39777E00E414A6 /* NSAttributedString+HTHMarkdown.h */,
+				A987ADD81A39777E00E414A6 /* NSAttributedString+HTHMarkdown.m */,
 				A987ADB31A396F6800E414A6 /* HTHAppDelegate.h */,
 				A987ADB41A396F6800E414A6 /* HTHAppDelegate.m */,
 				A987ADB61A396F6800E414A6 /* HTHViewController.h */,
@@ -213,6 +218,7 @@
 			files = (
 				A987ADB81A396F6800E414A6 /* HTHViewController.m in Sources */,
 				A987ADB51A396F6800E414A6 /* HTHAppDelegate.m in Sources */,
+				A987ADD91A39777E00E414A6 /* NSAttributedString+HTHMarkdown.m in Sources */,
 				A987ADB21A396F6800E414A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

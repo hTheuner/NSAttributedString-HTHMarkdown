@@ -8,6 +8,8 @@
 
 #import "HTHViewController.h"
 
+#import "NSAttributedString+HTHMarkdown.h"
+
 @interface HTHViewController ()
 
 @property (nonatomic) UILabel *label;
@@ -21,12 +23,16 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
+
+    NSString *markdown = @"!(Icon Location) Berlin !(Icon Message) Message";
+    NSDictionary *textAttributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:18.f]};
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithMarkdown:markdown attributes:textAttributes];
     
     [self.view addSubview:({
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
         label.translatesAutoresizingMaskIntoConstraints = NO;
         label.numberOfLines = 0;
-        label.text = @"s";
+        label.attributedText = attributedText;
         
         self.label = label;
     })];
