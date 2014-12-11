@@ -1,4 +1,4 @@
-#NSAttributedString-Markdown
+#NSAttributedString-HTHMarkdown
 
 A very simple category for adding markdown to an attributed string. Only markdown image syntax w/o tags is supported right now. Useful when you need to display an image and text inline with just one UILabel.
 
