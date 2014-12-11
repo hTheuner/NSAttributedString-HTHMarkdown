@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithWhite:244.f / 255.f alpha:1.f];;
 
     NSString *markdown = @"!(Icon Location) Berlin !(Icon Message) Message";
     NSDictionary *textAttributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:18.f]};
@@ -32,6 +32,7 @@
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
         label.translatesAutoresizingMaskIntoConstraints = NO;
         label.numberOfLines = 0;
+        label.backgroundColor = [UIColor whiteColor];
         label.attributedText = attributedText;
         
         self.label = label;
