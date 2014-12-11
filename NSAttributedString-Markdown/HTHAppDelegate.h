@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HTHAppDelegate.h
 //  NSAttributedString-Markdown
 //
 //  Created by Theuner, Heiko on 12/10/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HTHAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
-
